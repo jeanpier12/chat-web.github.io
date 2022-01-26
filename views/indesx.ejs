@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soket.io Ejemplo</title>
+    <link href="estilochat.css" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="seccion.js"></script>
+    <!-- para saber si esta ruta se leyo coerectamente copiamos
+    la url en el navejador y si me aparece un codigo javaScript 
+significa que se lee con exito -->
+<!-- defer me sirve para trabajar de forma asincrona
+mietras la paguina carga no ocurra un error -->
+    <!-- <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script> -->
+  
+</head>
+
+<body>
+    <div id="cuerpo">
+        <section class="seccionToggle">
+            <div class="wrap">
+                <h2>chat de administradores</h2>
+                
+            </div>
+            <form action="" id='msgForm'>
+                <div id="mensajes"></div>
+                <input type="text" name='msg' id="cap">
+                <button onclick="capurar()">Enviar</button>
+            </form>
+        
+        </section>
+    
+        <a href="#" id="btn-toggle" class="btn-toggle">chat</a>
+    
+        
+    </div>
+
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+   
+</body>
+</html>
